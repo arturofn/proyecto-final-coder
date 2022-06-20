@@ -1,0 +1,8 @@
+/*aplicando maps*/
+$botonRedes:(ancho:20%,fondo:rgb(55, 219, 118),borde:5px);
+
+.redesBtn {
+    width: map-get($botonRedes,ancho);
+    background-color: map-get($botonRedes,fondo);
+    border-radius: map-get($botonRedes,borde);
+}
