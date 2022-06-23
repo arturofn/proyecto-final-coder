@@ -6,6 +6,21 @@
 $color-subs:gray;
 $padding1:20px;
 
+@keyframes texto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.textoPromo {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
 .logoPrincipal {
     display: inline-block;
@@ -36,6 +51,18 @@ $padding1:20px;
 h1 {
     text-align: center;
     padding: $padding1;
+    font-size: 1.5rem;
+}
+
+h2 {
+    padding: $padding1;
+    color: $color-subs;
+    text-align: center;    
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /*.btnRedes {
@@ -154,14 +181,6 @@ footer a {
     width: 100%;
 }
 
-
-
-h2 {
-    padding: $padding1;
-    color: $color-subs;
-    text-align: center;    
-}
-
 .carrito {
     width: 40px;
 }
@@ -266,18 +285,30 @@ input {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.cardCategoria {
-    border: 1px solid grey;
+.cardCategoria {    
     border-radius: 20px;
+    background-color: rgb(245, 245, 245);
 }
 
 .cardProductos {
-    border: 1px solid grey;
+    border: 0.5px solid rgb(197, 197, 197);
     border-radius: 20px;
 }
 
-.img-fluid {
-    width: 60%;
+.imgCategorias {
+    width: 50%;
+}
+
+.imgProductos {
+    width: 50%;
+}
+
+.imgMarcas {
+    width: 80%;
+}
+
+.imgCta {
+    border-radius: 25px;
 }
 
 .disclaimer {

@@ -21,6 +21,9 @@
 </head>
 <body class="container-fluid px-0">
     <header>
+      <div>
+        <h3 class="textoPromo">Envíos a Nivel Nacional</h3>
+      </div>
         <nav class="navbar navbar-expand-lg" style="background-color: #027C76;">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
@@ -38,10 +41,10 @@
                       Categorías
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-                      <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                      <li><a class="dropdown-item" href="#">Cómputo</a></li>
+                      <li><a class="dropdown-item" href="#">Smartwatch</a></li>
+                      <li><a class="dropdown-item" href="#">Webcam</a></li>
+                      <li><a class="dropdown-item" href="#">Audio</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -106,16 +109,27 @@
             <div class="container">
                 <div class="row">
                   <div>
-                    <h2 class="animate__animated animate__rubberBand">Las Categorías más buscadas</h2>
-                    <h1>Aquí encontrarás los mejores productos en tecnología: audio, video, pc, laptops y todos los accesorios que necesites.</h1>            
+                    <h2 class="animate__animated animate__rubberBand">Categorías</h2>
+                    <h1>Aquí encontrarás los mejores productos en tecnología.</h1>            
                   </div>
                 </div>  
 
                 <div class="row gy-5">
-                  <div class="boxCategoria col-md-4 col-lg-4 text-center">
-                    <div class="cardCategoria">    
+                  <div class="boxCategoria col-sm-4 col-md-6 col-lg-3 text-center">
+                    <div class="cardCategoria py-1">    
                       <div>
-                          <div><img src="./img/Bracelet M4.png" alt="" class="img-fluid"></div>
+                          <div><img src="./img/productos/laptop-lenovo-v14.png" alt="" class="img-fluid imgCategorias"></div>
+                      </div>
+                      <div>                            
+                          <h5 class="subtitleCategoria">Cómputo</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="boxCategoria col-sm-4 col-md-6 col-lg-3 text-center">
+                    <div class="cardCategoria py-1">    
+                      <div>
+                          <div><img src="./img/productos/smartwatch-w26-negro.png" alt="" class="img-fluid imgCategorias"></div>
                       </div>
                       <div>                            
                           <h5 class="subtitleCategoria">Smartwatch</h5>
@@ -123,10 +137,10 @@
                     </div>
                   </div>
     
-                  <div class="boxCategoria col-md-4 col-lg-4 text-center">
-                      <div class="cardCategoria">  
+                  <div class="boxCategoria col-sm-4 col-md-6 col-lg-3 text-center">
+                      <div class="cardCategoria py-1">  
                           <div>
-                              <div><img src="./img/Halion w270.png" alt="" class="img-fluid"></div>
+                              <div><img src="./img/productos/webcam-fullhd.png" alt="" class="img-fluid imgCategorias"></div>
                           </div>
                           <div>                            
                               <h5 class="subtitleCategoria">Webcam</h5>
@@ -134,13 +148,13 @@
                       </div>  
                   </div>
     
-                  <div class="boxCategoria col-md-4 col-lg-4 text-center">
-                      <div class="cardCategoria">    
+                  <div class="boxCategoria col-sm-4 col-md-6 col-lg-3 text-center">
+                      <div class="cardCategoria py-1">    
                           <div>
-                              <div><img src="./img/T5.png" alt="" class="img-fluid"></div>
+                              <div><img src="./img/productos/parlante-jbl-go.png" alt="" class="img-fluid imgCategorias"></div>
                           </div>
                           <div>
-                              <h5 class="subtitleCategoria">Parlantes</h5>
+                              <h5 class="subtitleCategoria">Audio</h5>
                           </div>
                       </div>
                   </div>
@@ -150,25 +164,27 @@
 
 <!-- Call to action 1         -->
 
-        <section class="encabezado">
+        <section class="encabezado" data-aos="fade-up" data-aos-duration="1000">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 col-lg-8 d-flex flex-column justify-content-center p-5">
-                    <h3>Tus accesorios al mejor precio</h3>
-                    <p>Aquí encontrarás los mejores productos en tecnología: audio, video, pc, laptops y todos los accesorios que necesites. Realizamos envías a nivel nacional y aceptamos todos los medios de pago.</p>
-                    <button class="btnCta align-self-start">Ver Tienda</button>
-              </div>
 
-              <div class="col-md-4 col-lg-4 text-center p-5">
+              <div class="col-md-6 col-lg-6 order-sm-2 text-center p-5">
                 <div class="cardEncabezadoImg">
-                  <img src="./img/Bracelet M4.png" alt="" class="img-fluid">                  
+                  <img src="./img/modelo-home-cta.jpg" alt="" class="img-fluid imgCta">                  
                 </div>
               </div>
+
+              <div class="col-md-6 col-lg-6 order-sm-1 d-flex flex-column justify-content-center p-5">
+                <h4>Tus accesorios al mejor precio</h4>
+                <p>Aquí encontrarás los mejores productos en tecnología: audio, video, pc, laptops y todos los accesorios que necesites. Realizamos envías a nivel nacional y aceptamos todos los medios de pago.</p>
+                <button class="btnCta align-self-start">Ver Tienda</button>
+              </div>
+
             </div>
           </div>
         </section>
 
-        <section id="bannersPublicitarios">
+        <section id="bannersPublicitarios" data-aos="fade-left" data-aos-duration="1000">
               <div class="container-fluid px-0 py-5">
                 <div class="row gy-2">
                   <div class="col-lg-4">
@@ -184,17 +200,26 @@
               </div>  
         </section>
 
-        <section class="productos2 p-5">
+<!-- Seccion Productos -->
+
+        <section class="productos2 p-5" data-aos="fade-up" data-aos-duration="1000">
           <div class="container">
+
+              <div class="row">
+                <div>
+                  <h2 class="animate__animated animate__rubberBand">Productos Destacados</h2>            
+                </div>
+              </div>
+
               <div class="row gy-5">
-                  <div class="boxProductos col-md-6 col-lg-4 text-center">
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
                     <div class="cardProductos">    
                       <div>
-                          <div><img src="./img/Bracelet M4.png" alt="" class="img-fluid"></div>
+                          <div><img src="./img/productos/laptop-lenovo-v14.png" alt="" class="img-fluid imgProductos"></div>
                       </div>
                       <div>
-                          <p>Bracelet M4</p>
-                          <span>S/. 99.00</span>
+                          <p>Laptop Lenovo V14</p>
+                          <span>S/. 3,500.00</span>
                       </div>
                       <div>
                           <button class="comprar">Comprar</button>
@@ -202,14 +227,14 @@
                     </div>
                   </div>
   
-                  <div class="boxProductos col-md-6 col-lg-4 text-center">
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
                     <div class="cardProductos">    
                       <div>
-                          <div><img src="./img/Bracelet M4.png" alt="" class="img-fluid"></div>
+                          <div><img src="./img/productos/parlante-jbl-go.png" alt="" class="img-fluid imgProductos"></div>
                       </div>
                       <div>
-                          <p>Bracelet M4</p>
-                          <span>S/. 99.00</span>
+                          <p>Parlante JBL Go</p>
+                          <span>S/. 119.00</span>
                       </div>
                       <div>
                           <button class="comprar">Comprar</button>
@@ -217,14 +242,14 @@
                     </div>
                   </div>
   
-                  <div class="boxProductos col-md-6 col-lg-4 text-center">
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
                     <div class="cardProductos">    
                       <div>
-                          <div><img src="./img/Bracelet M4.png" alt="" class="img-fluid"></div>
+                          <div><img src="./img/productos/audifonos-halion.png" alt="" class="img-fluid imgProductos"></div>
                       </div>
                       <div>
-                          <p>Bracelet M4</p>
-                          <span>S/. 99.00</span>
+                          <p>Audífonos Halion</p>
+                          <span>S/. 25.00</span>
                       </div>
                       <div>
                           <button class="comprar">Comprar</button>
@@ -232,14 +257,14 @@
                     </div>
                   </div>
   
-                  <div class="boxProductos col-md-6 col-lg-4 text-center">
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
                     <div class="cardProductos">    
                       <div>
-                          <div><img src="./img/Bracelet M4.png" alt="" class="img-fluid"></div>
+                          <div><img src="./img/productos/webcam-fullhd.png" alt="" class="img-fluid imgProductos"></div>
                       </div>
                       <div>
-                          <p>Bracelet M4</p>
-                          <span>S/. 99.00</span>
+                          <p>Webcam Full HD</p>
+                          <span>S/. 119.00</span>
                       </div>
                       <div>
                           <button class="comprar">Comprar</button>
@@ -247,14 +272,14 @@
                     </div>
                   </div>
   
-                  <div class="boxProductos col-md-6 col-lg-4 text-center">
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
                     <div class="cardProductos">    
                       <div>
-                          <div><img src="./img/Bracelet M4.png" alt="" class="img-fluid"></div>
+                          <div><img src="./img/productos/smartwatch-w26-negro.png" alt="" class="img-fluid imgProductos"></div>
                       </div>
                       <div>
-                          <p>Bracelet M4</p>
-                          <span>S/. 99.00</span>
+                          <p>Smartwatch W26 negro</p>
+                          <span>S/. 119.00</span>
                       </div>
                       <div>
                           <button class="comprar">Comprar</button>
@@ -262,14 +287,44 @@
                     </div>
                   </div>
   
-                  <div class="boxProductos col-md-6 col-lg-4 text-center">
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
                     <div class="cardProductos">    
                       <div>
-                          <div><img src="./img/Bracelet M4.png" alt="" class="img-fluid"></div>
+                          <div><img src="./img/productos/audifonos-airpods-blanco.png" alt="" class="img-fluid imgProductos"></div>
                       </div>
                       <div>
-                          <p>Bracelet M4</p>
-                          <span>S/. 99.00</span>
+                          <p>Airpods Blanco</p>
+                          <span>S/. 599.00</span>
+                      </div>
+                      <div>
+                          <button class="comprar">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
+                    <div class="cardProductos">    
+                      <div>
+                          <div><img src="./img/productos/smartwatch-m4-negro.png" alt="" class="img-fluid imgProductos"></div>
+                      </div>
+                      <div>
+                          <p>Smartwatch M4 negro</p>
+                          <span>S/. 69.00</span>
+                      </div>
+                      <div>
+                          <button class="comprar">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="boxProductos col-md-6 col-lg-3 text-center">
+                    <div class="cardProductos">    
+                      <div>
+                          <div><img src="./img/productos/webcam-halion-w720.png" alt="" class="img-fluid imgProductos"></div>
+                      </div>
+                      <div>
+                          <p>Webcam Halion W720</p>
+                          <span>S/. 69.00</span>
                       </div>
                       <div>
                           <button class="comprar">Comprar</button>
@@ -278,7 +333,27 @@
                   </div>
               </div>
           </div>
-        </section>     
+        </section>
+        
+        <section data-aos="fade-right" data-aos-duration="1000">
+          <div class="container">
+            <div class="row">
+              <div>
+                <h2 class="animate__animated animate__rubberBand">Marcas</h2>
+                <h3>Contamos con las mejores marcas del mercado.</h3>            
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><img src="./img/marcas/samsung.jpeg" alt="" class="img-fluid imgMarcas"></div>
+              <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><img src="./img/marcas/dell.jpeg" alt="" class="img-fluid imgMarcas"></div>
+              <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><img src="./img/marcas/lg.jpeg" alt="" class="img-fluid imgMarcas"></div>
+              <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><img src="./img/marcas/asus.jpeg" alt="" class="img-fluid imgMarcas"></div>
+              <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><img src="./img/marcas/sony.jpeg" alt="" class="img-fluid imgMarcas"></div>
+              <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><img src="./img/marcas/bose.jpeg" alt="" class="img-fluid imgMarcas"></div>
+            </div>
+          </div>
+        </section>
 
     </main>
 
