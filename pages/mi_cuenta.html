@@ -66,13 +66,16 @@
 
         <section class="contenedorAcceder">
           <div class="container">
-            <div class="row py-5">     
-              <div class="col-lg-6 col-md-12 col-sm-12 textoAcceder">
-                  <h3>Acceder</h3>
-                  <p>Accede a tu cuenta para poder comprar en nuestra tienda online</p>
-              </div>
 
-              <div class="col-lg-6 col-md-12 col-sm-12">        
+            <div class="row py-5">     
+              <div class="col textoAcceder">
+                  <h3>Acceder / Registrarse</h3>
+                  <p>Accede a tu cuenta o regístrate para poder comprar en nuestra tienda online</p>
+              </div>              
+            </div>
+
+            <div class="row pb-5 gy-5">     
+              <div class="col-lg-6 col-md-12 col-sm-12 px-5">        
                 <form>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo</label>
@@ -87,7 +90,23 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                   </div>
-                  <button type="submit" class="btnCta">Enviar</button>
+                  <button type="submit" class="btnCta">Acceder</button>
+                </form>
+              </div>
+
+              <div class="col-lg-6 col-md-12 col-sm-12 px-5">        
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div id="privacidad" class="form-text">Sus datos personales se utilizarán para respaldar su experiencia en este sitio web, para administrar el acceso a su cuenta y para otros fines descritos en nuestra política de privacidad.</div>
+                  <button type="submit" class="btnCta">Registrarse</button>
                 </form>
               </div>
             </div>
