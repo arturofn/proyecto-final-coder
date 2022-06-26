@@ -12,6 +12,11 @@
 <!-- Iconos Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="container-fluid px-0">
@@ -24,7 +29,7 @@
               <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo solutitec blanco.png" alt="logo" width="200" class="d-inline-block align-text-top"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="iconMenu bi bi-list"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
@@ -56,6 +61,7 @@
                   </li>
                 </ul>
                 <form class="d-flex">
+                  <button class="carrito btn btn-outline-light me-2 rounded-pill" type="submit"><i class="bi bi-cart3"></i></button>
                   <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar producto" aria-label="Search">
                   <button class="btn btn-outline-light rounded-pill" type="submit">Buscar</button>
                 </form>
@@ -65,27 +71,55 @@
     </header>
     <main>
         <section>
-                <h2>Pasos para comprar en nuestra tienda online:</h2>
-
-                    <ol>
-                        <li>Registrarte</li>
-                        <li>Añadir los productos al carrito</li>
-                        <li>Registrar tu pago</li>
-                    </ol>
-
+          <div data-aos="fade-up" data-aos-duration="1000" >
+            <h1 class="animate__animated animate__rubberBand">¿Cómo comprar en nuestra tienda online?</h1>
+          </div>
+            <div class="container">
+              <div class="row gy-5">
+                <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="row gy-5">
+                    <div class="text-center">
+                      <h4>Sigue estos pasos:</h4>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                      <div class="cardComprar p-2">
+                        <img src="../img/iconos/iniciar-sesion.png" alt="icono-login" class="img-fluid iconCompra">
+                        <h4>1. Acceder</h4>
+                        <p>Accede con tu cuenta o crea una nueva.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                      <div class="cardComprar p-2">
+                        <img src="../img/iconos/agregar-carrito.png" alt="icono-carrito" class="img-fluid iconCompra">
+                        <h4>2. Agregar</h4>
+                        <p>Agrega los productos que desees al carrito.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                      <div class="cardComprar p-2">
+                        <img src="../img/iconos/realizar-pago.png" alt="icono-pagar" class="img-fluid iconCompra">
+                        <h4>3. Pagar</h4>
+                        <p>Realiza el pago con el medio de tu preferencia.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="text-center">
+                    <h4>También puedes ver nuestro tutorial:</h4>
+                  </div>
+                  <div class="ratio ratio-16x9">
+                    <iframe id="comoComprar" width="100%" src="https://www.youtube.com/embed/bbKL6tWI49M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>   
+                </div>
+              </div>
+            </div>
         </section>
-        
-        <section>
-
-                <h2>Mira nuestro tutorial de compras:</h2>
-                    <iframe id="comoComprar" width="560" height="315" src="https://www.youtube.com/embed/bbKL6tWI49M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-        </section>   
         
     </main>
 
     <div class="btnWhatsapp">
-        <a href="https://wa.me/51936691811"><img src="../img/logo-whatsapp.png" alt="" id="whatsapp"></a>
+        <a href="https://wa.me/51936691811"><img src="../img/logo-whatsapp.png" alt="boton-whatsapp" id="whatsapp"></a>
         
     </div>
 
@@ -100,25 +134,33 @@
             <a href="./contacto.html">Contacto</a>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="../img/Logo Solutitec verde.png" alt="" class="img-fluid">
+            <img src="../img/Logo Solutitec verde.png" alt="logo-footer" class="logoFooter img-fluid">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center">
             <h4>Síguenos</h4>
             <div>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.facebook.com/"><i class="btnRedes bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="btnRedes bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/"><i class="btnRedes bi bi-youtube"></i></a>
             </div>            
           </div>
         </div>
         <div class="row">
           <div class="col text-center">
-            <p>Sitio creado por <strong>Arturo Fernández</strong></p>
+            <p>Sitio creado por <strong>Hector Fernández</strong></p>
           </div>
         </div>
       </div>
     </footer>
     <!-- Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

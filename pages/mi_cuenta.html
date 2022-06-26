@@ -12,6 +12,11 @@
 <!-- Iconos Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="container-fluid px-0">
     <header>
@@ -23,7 +28,7 @@
               <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo solutitec blanco.png" alt="logo" width="200" class="d-inline-block align-text-top"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="iconMenu bi bi-list"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
@@ -55,6 +60,7 @@
                   </li>
                 </ul>
                 <form class="d-flex">
+                  <button class="carrito btn btn-outline-light me-2 rounded-pill" type="submit"><i class="bi bi-cart3"></i></button>
                   <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar producto" aria-label="Search">
                   <button class="btn btn-outline-light rounded-pill" type="submit">Buscar</button>
                 </form>
@@ -68,14 +74,14 @@
           <div class="container">
 
             <div class="row py-5">     
-              <div class="col textoAcceder">
-                  <h3>Acceder / Registrarse</h3>
-                  <p>Accede a tu cuenta o regístrate para poder comprar en nuestra tienda online</p>
+              <div class="col textoAcceder" data-aos="fade-up" data-aos-duration="1000">
+                  <h3 class="animate__animated animate__rubberBand">Acceder / Registrarse</h3>
+                  <h1>Accede a tu cuenta o regístrate para poder comprar en nuestra tienda online</h1>
               </div>              
             </div>
 
             <div class="row pb-5 gy-5">     
-              <div class="col-lg-6 col-md-12 col-sm-12 px-5">        
+              <div class="col-lg-6 col-md-12 col-sm-12 px-5" data-aos="fade-right" data-aos-duration="1000">        
                 <form>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo</label>
@@ -91,10 +97,11 @@
                     <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                   </div>
                   <button type="submit" class="btnCta">Acceder</button>
+                  <button type="reset" class="btnCta">Limpiar</button>
                 </form>
               </div>
 
-              <div class="col-lg-6 col-md-12 col-sm-12 px-5">        
+              <div class="col-lg-6 col-md-12 col-sm-12 px-5" data-aos="fade-left" data-aos-duration="1000">        
                 <form>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo</label>
@@ -107,6 +114,7 @@
                   </div>
                   <div id="privacidad" class="form-text">Sus datos personales se utilizarán para respaldar su experiencia en este sitio web, para administrar el acceso a su cuenta y para otros fines descritos en nuestra política de privacidad.</div>
                   <button type="submit" class="btnCta">Registrarse</button>
+                  <button type="reset" class="btnCta">Limpiar</button>
                 </form>
               </div>
             </div>
@@ -115,8 +123,10 @@
         
     </main>
 
+    <!-- Boton flotante whatsapp -->
+
     <div class="btnWhatsapp">
-        <a href="https://wa.me/51936691811"><img src="../img/logo-whatsapp.png" alt="" id="whatsapp"></a>
+        <a href="https://wa.me/51936691811"><img src="../img/logo-whatsapp.png" alt="boton-whatsapp" id="whatsapp"></a>
         
     </div>
 
@@ -131,25 +141,33 @@
             <a href="./contacto.html">Contacto</a>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="../img/Logo Solutitec verde.png" alt="" class="img-fluid">
+            <img src="../img/Logo Solutitec verde.png" alt="logo-footer" class="logoFooter img-fluid">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center">
             <h4>Síguenos</h4>
             <div>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.facebook.com/"><i class="btnRedes bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="btnRedes bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/"><i class="btnRedes bi bi-youtube"></i></a>
             </div>            
           </div>
         </div>
         <div class="row">
           <div class="col text-center">
-            <p>Sitio creado por <strong>Arturo Fernández</strong></p>
+            <p>Sitio creado por <strong>Hector Fernández</strong></p>
           </div>
         </div>
       </div>
     </footer>
     <!-- Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

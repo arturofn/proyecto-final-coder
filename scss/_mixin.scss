@@ -1,17 +1,12 @@
 /*aplicando mixin*/
 
-$padding1:20px;
+$bradius:25px;
 
-@mixin categoriasProductos {
-        padding: $padding1;
-        margin-bottom: 20px;          
-        border-radius: 25px;
-        display: flex;
-        justify-content: space-between;
+@mixin cardComprar {
+        background-color: rgb(245, 245, 245);
+        border-radius: $bradius;        
 }
 
-.padreProductos {
-        @include categoriasProductos;
+.textoContacto {
+        @include cardComprar;
 }
-
-//esto lo tengo anidado en style.scss pero no lo he tocado ni comentado porque no se si se vaya a romper
